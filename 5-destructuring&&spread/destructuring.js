@@ -1,4 +1,63 @@
+// 
+let introduction = ["Hello", "I" , "am", "Sarah"];
+let greeting = introduction[0];
+let name = introduction[3];
+
+console.log(greeting);//"Hello"
+console.log(name);//"Sarah"
+
+// Declaring Variables before Assignment
+
+let introduction = ["Hello", "I" , "am", "Sarah"];
+let [greeting, pronoun] = introduction;
+
+console.log(greeting);//"Hello"
+console.log(pronoun);//"I"
+
+// Skipping Items in an Array
+
+let [greeting,,,name] = ["Hello", "I" , "am", "Sarah"];
+
+console.log(greeting);//"Hello"
+console.log(name);//"Sarah"
+
+// 
+let [,pronoun,,name] = ["Hello", "I" , "am", "Sarah"];
+
+console.log(pronoun);//"I"
+console.log(name);//"Sarah"
+
+
+// ------------
+let person = {name: "Sarah", country: "Nigeria", job: "Developer"};
+
+let name = person.name;
+let country = person.country;
+let job = person.job;
+
+console.log(name);//"Sarah"
+console.log(country);//"Nigeria"
+console.log(job);//Developer"
+
+// Basic Object Destructuring
+
+let person = {name: "Sarah", country: "Nigeria", job: "Developer"};
+
+let {name, country, job} = person;
+
+console.log(name);//"Sarah"
+console.log(country);//"Nigeria"
+console.log(job);//Developer"
+
+// 
+let {name, country, job} = {name: "Sarah", country: "Nigeria", job: "Developer"};
+
+console.log(name);//"Sarah"
+console.log(country);//"Nigeria"
+console.log(job);//Developer"
+
 // destructuring object
+
 
 // without destructuring
 let user = {
